@@ -24,6 +24,8 @@ fi
 basepath=$(dirname $0)
 cd ${basepath}
 
+yum install iptables iptables-services -y
+
 function ConfigEnvironmentVariable {
     # 变量设置
     # 单IP最大连接数，默认是2
